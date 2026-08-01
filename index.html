@@ -10,13 +10,41 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Oakwood home">
-        <span class="brand-mark">O</span>
-        <span><strong>OAKWOOD</strong><small>BOUTIQUE MELBOURNE</small></span>
+
+      <!-- OAKWOOD LOGO -->
+      <a
+        class="oakwood-link"
+        href="https://www.discoverasr.com/en/oakwood"
+        target="_blank"
+        rel=""
+        aria-label="Visit the Oakwood website"
+      >
+        <img  src="assets/img/oakwood.png" alt="Oakwood" class="oakwood-logo">
       </a>
+
+      <span class="brand-divider" aria-hidden="true"></span>
+
+      <!-- OUR LOGO -->
+      <a
+        class="partner-brand"
+        href="gloomy_sunday.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit the Gloomy Sunday website"
+      >
+       <!--<span class="partner-brand" href="" aria-label="Your company website"> --> 
+          <img src="assets/img/logo.png" alt="Gloomy Sunday" class="partner-logo">
+       <!-- </span> -->
+        <span class="partner-text">
+          <small>IN PARTNERSHIP WITH</small>
+          <strong>GLOOMY SUNDAY</strong>
+        </span>
+      </a>
+
       <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#locations">Locations</a>
@@ -24,7 +52,9 @@
         <a href="#project">Project</a>
         <a href="#contact">Contact</a>
       </nav>
+      <!-- 
       <a class="btn btn-small" href="#contact">Register Interest</a>
+      -->
     </div>
   </header>
 
@@ -32,9 +62,9 @@
     <section class="hero" id="home">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <p class="eyebrow">A NEW OAKWOOD EXPERIENCE</p>
+        <p class="project-title">Oakwood Hotel Expansion Project</p>
         <h1>Quiet luxury,<br />beautifully connected.</h1>
-        <p class="hero-copy">Oakwood is planning a new boutique hotel in suburban Melbourne, designed for guests who value personalised service, elegant spaces and the calm of a lifestyle-focused location.</p>
+        <p class="hero-copy">Guided by research and strategic planning, this project will identify the ideal Melbourne location for Oakwood’s next boutique hotel and create a clear pathway for sustainable expansion.</p>
         <div class="hero-actions">
           <a class="btn" href="#locations">Explore Proposed Locations</a>
           <a class="btn btn-ghost" href="#project">View Expansion Plan</a>
@@ -42,7 +72,7 @@
         <div class="hero-stats" aria-label="Project highlights">
           <div><strong>3</strong><span>Potential locations</span></div>
           <div><strong>4</strong><span>Specialist departments</span></div>
-          <div><strong>1</strong><span>Premium boutique vision</span></div>
+          <div><strong>1</strong><span>Sustainable expension plan</span></div>
         </div>
       </div>
     </section>
