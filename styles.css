@@ -1314,3 +1314,388 @@ html {
   color: #72d6e4;
   font-size: 1.1rem;
 }
+
+/* SHARED STYLES */
+
+.delivery-section,
+.workforce-section {
+  padding: 7rem 1.5rem;
+}
+
+.delivery-container,
+.workforce-container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.delivery-header,
+.workforce-header {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: end;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.section-eyebrow {
+  margin: 0 0 1.2rem;
+  color: #25869a;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.delivery-header h2,
+.workforce-header h2 {
+  max-width: 620px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.section-summary p {
+  margin: 0;
+  color: #627680;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.detail-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+  padding: 0.95rem 1.4rem;
+  border: 1px solid #12384a;
+  border-radius: 999px;
+  background: #12384a;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.detail-button span {
+  color: #72d6e4;
+  font-size: 1.1rem;
+}
+
+.detail-button:hover {
+  background: #25869a;
+  border-color: #25869a;
+  transform: translateY(-2px);
+}
+
+
+/* CONSTRUCTION SECTION */
+
+.delivery-section {
+  background: #f4f1e9;
+  color: #102f3e;
+}
+
+.delivery-tiers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.delivery-card {
+  padding: 2.2rem;
+  border: 1px solid #d4dddf;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.delivery-card-featured {
+  border-color: #173f58;
+  background: #173f58;
+  color: #ffffff;
+}
+
+.tier-number {
+  display: block;
+  margin-bottom: 2.5rem;
+  color: #43b6ca;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.tier-label {
+  margin: 0 0 0.7rem;
+  color: #25869a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.delivery-card-featured .tier-label {
+  color: #72d6e4;
+}
+
+.delivery-card h3 {
+  margin: 0 0 1rem;
+  color: #123344;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+}
+
+.delivery-card-featured h3 {
+  color: #fff8e9;
+}
+
+.delivery-card > p:not(.tier-label) {
+  min-height: 5rem;
+  color: #677a83;
+  line-height: 1.6;
+}
+
+.delivery-card-featured > p:not(.tier-label) {
+  color: #c7d7dc;
+}
+
+.delivery-card ul {
+  margin: 1.5rem 0 0;
+  padding: 1.4rem 0 0;
+  border-top: 1px solid #dbe2e4;
+  list-style: none;
+}
+
+.delivery-card-featured ul {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.delivery-card li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  padding-left: 1.3rem;
+  color: #526974;
+  line-height: 1.5;
+}
+
+.delivery-card-featured li {
+  color: #e3edf0;
+}
+
+.delivery-card li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #43b6ca;
+}
+
+.handover-banner {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  margin-top: 1.25rem;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  background: #dfeff2;
+}
+
+.handover-banner span {
+  color: #25869a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.handover-banner p {
+  margin: 0;
+  color: #3e5965;
+  line-height: 1.6;
+}
+
+
+/* WORKFORCE SECTION */
+
+.workforce-section {
+  background: #102f3e;
+  color: #ffffff;
+}
+
+.workforce-header h2 {
+  color: #fff8e9;
+}
+
+.workforce-summary p {
+  color: #bdcbd0;
+}
+
+.detail-button-light {
+  border-color: #72d6e4;
+  background: transparent;
+  color: #ffffff;
+}
+
+.detail-button-light:hover {
+  background: #72d6e4;
+  color: #102f3e;
+}
+
+.workforce-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 1.5rem;
+}
+
+.workforce-phases {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.phase {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.phase > span {
+  color: #72d6e4;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.phase h3 {
+  margin: 0 0 0.65rem;
+  color: #fff8e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+}
+
+.phase p {
+  margin: 0;
+  color: #bdcbd0;
+  line-height: 1.65;
+}
+
+.workforce-overview {
+  padding: 2.3rem;
+  border-radius: 24px;
+  background: #f4f1e9;
+  color: #102f3e;
+}
+
+.overview-label,
+.outsourcing-label {
+  margin: 0 0 1.5rem;
+  color: #25869a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.staff-stat {
+  margin-bottom: 1.5rem;
+}
+
+.staff-stat strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5rem;
+  line-height: 0.95;
+}
+
+.staff-stat span {
+  color: #5c717b;
+  font-weight: 700;
+}
+
+.workforce-overview > p:not(.overview-label) {
+  color: #637680;
+  line-height: 1.6;
+}
+
+.staffing-principles {
+  margin-top: 1.8rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ccd8db;
+}
+
+.staffing-principles h3 {
+  margin: 0 0 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.staffing-principles ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.staffing-principles li {
+  position: relative;
+  margin-bottom: 0.8rem;
+  padding-left: 1.3rem;
+  color: #526974;
+  line-height: 1.5;
+}
+
+.staffing-principles li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #25869a;
+}
+
+.outsourcing-note {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 3rem;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border: 1px solid rgba(114, 214, 228, 0.3);
+  border-radius: 18px;
+}
+
+.outsourcing-note h3 {
+  margin: 0;
+  color: #fff8e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+}
+
+.outsourcing-note > p {
+  margin: 0;
+  color: #bdcbd0;
+  line-height: 1.7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .delivery-header,
+  .workforce-header,
+  .workforce-layout,
+  .outsourcing-note {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-tiers {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-card > p:not(.tier-label) {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .delivery-section,
+  .workforce-section {
+    padding: 5rem 1.2rem;
+  }
+
+  .phase,
+  .handover-banner {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+}
