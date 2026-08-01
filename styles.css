@@ -1283,3 +1283,34 @@ html {
 .location-card li::marker {
   color: #72d6e4;
 }
+
+.slides-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.3rem;
+
+  color: #ffffff;
+  background: #12384a;
+  border: 1px solid #12384a;
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.slides-button:hover {
+  background: #247f95;
+  border-color: #247f95;
+  transform: translateY(-2px);
+}
+
+.slides-button span {
+  color: #72d6e4;
+  font-size: 1.1rem;
+}
