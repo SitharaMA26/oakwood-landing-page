@@ -1110,3 +1110,176 @@ html {
 .gs-commitment .gs-eyebrow {
   color: #65d3e3;
 }
+
+.hotel-concept .experience-content {
+  min-width: 0;
+}
+
+.hotel-concept {
+  background: #102f3e;
+  color: #f4f1e9;
+}
+
+.hotel-concept .eyebrow {
+  color: #45b8ca;
+}
+
+.hotel-concept h2 {
+  color: #f4f1e9;
+}
+
+.hotel-concept-intro {
+  color: #bdcbd0;
+}
+
+.concept-table-wrapper {
+  border-top: 2px solid #45b8ca;
+}
+
+.concept-table th,
+.concept-table td {
+  border-bottom: 1px solid rgba(225, 236, 239, 0.28);
+}
+
+.concept-table th {
+  color: #45b8ca;
+}
+
+.concept-table td {
+  color: #bdcbd0;
+}
+
+/* Hotel-service column */
+.concept-table td:first-child {
+  color: #f4f1e9;
+  font-weight: 600;
+}
+
+/* Workforce-implication column */
+.concept-table td:last-child {
+  color: #bdcbd0;
+}
+
+.concept-table tbody tr:hover {
+  background: rgba(69, 184, 202, 0.09);
+}
+
+/* Docklands card */
+.location-card:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Darker overlay for improved contrast */
+.location-card:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(9, 35, 49, 0.68) 0%,
+    rgba(9, 35, 49, 0.74) 35%,
+    rgba(7, 27, 39, 0.94) 100%
+  );
+}
+
+/* Keep content above the overlay */
+.location-card:nth-child(2) > * {
+  position: relative;
+  z-index: 1;
+}
+
+.location-card:nth-child(2) .location-number {
+  color: #72d6e4;
+}
+
+.location-card:nth-child(2) h3 {
+  color: #fff8e9;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.location-card:nth-child(2) p {
+  color: #eef3f4;
+}
+
+.location-card:nth-child(2) li {
+  color: #e1eaed;
+}
+
+.location-card:nth-child(2) li::marker,
+.location-card:nth-child(2) li::before {
+  color: #72d6e4;
+}
+
+.location-card:nth-child(2) strong {
+  color: #fff8e9;
+}
+
+/* Align all card headings at the same height */
+.location-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  padding-top: 4.25rem !important;
+}
+
+.location-card .location-number {
+  margin-top: 0 !important;
+  margin-bottom: 1rem;
+}
+
+.location-card h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Apply a readable dark overlay to every location card */
+.location-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.location-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 32, 45, 0.56) 0%,
+    rgba(8, 32, 45, 0.68) 42%,
+    rgba(6, 25, 37, 0.94) 100%
+  );
+}
+
+/* Keep all card content above the overlay */
+.location-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.location-card .location-number {
+  color: #72d6e4;
+}
+
+.location-card h3 {
+  color: #fff8e9;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.location-card p,
+.location-card li {
+  color: #e5edef;
+}
+
+.location-card strong {
+  color: #fff8e9;
+}
+
+.location-card li::before,
+.location-card li::marker {
+  color: #72d6e4;
+}
